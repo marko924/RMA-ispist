@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@drawable/main_slika">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="Registracija"
+                android:textColor="#FBFAFA"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/imeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ime"
+                android:inputType="text"
+                android:textColor="#FDFCFC"
+                android:textColorHint="#474646" />
+
+            <EditText
+                android:id="@+id/prezimeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Prezime"
+                android:inputType="text"
+                android:textColor="#FFFDFD"
+                android:textColorHint="#474646" />
+
+            <EditText
+                android:id="@+id/brojVozackeDozvoleInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Broj vozacke dozvole"
+                android:inputType="number"
+                android:textColor="#FBFAFA"
+                android:textColorHint="#474646" />
+
+            <EditText
+                android:id="@+id/datumIstekaDozvoleInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Datum isteka dozvole"
+                android:inputType="text"
+                android:textColor="#FDFBFB"
+                android:textColorHint="#474646" />
+
+            <EditText
+                android:id="@+id/datumRodjenjaInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Datum rodjenja"
+                android:inputType="text"
+                android:textColor="#FDFBFB"
+                android:textColorHint="#474646" />
+
+            <EditText
+                android:id="@+id/brojTelefonaInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Broj telefona"
+                android:inputType="phone"
+                android:textColor="#FBFAFA"
+                android:textColorHint="#474646" />
+
+            <EditText
+                android:id="@+id/ulicaInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ulica"
+                android:inputType="text"
+                android:textColor="#FDFBFB"
+                android:textColorHint="#474646" />
+
+            <EditText
+                android:id="@+id/gradInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Grad"
+                android:inputType="text"
+                android:textColor="#FBFAFA"
+                android:textColorHint="#474646" />
+
+            <EditText
+                android:id="@+id/postanskiBrojInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Postanski broj"
+                android:inputType="number"
+                android:textColor="#FDFBFB"
+                android:textColorHint="#474646" />
+
+            <EditText
+                android:id="@+id/emailInput2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="#FDFBFB"
+                android:textColorHint="#474646" />
+
+            <EditText
+                android:id="@+id/lozinkaInput2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Lozinka"
+                android:inputType="textPassword"
+                android:textColor="#FBFAFA"
+                android:textColorHint="#474646" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:buttonTint="@color/button"
+                android:text="Prikazi lozinku"
+                android:textColor="#474646"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/confirmPasswordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Potvrdite lozinku"
+                android:inputType="textPassword"
+                android:textColor="#FBFAFA"
+                android:textColorHint="#474646" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:buttonTint="@color/button"
+                android:text="Prikazi lozinku"
+                android:textColor="#474646"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/rounded_button_orange"
+                android:text="Registruj se"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button_orange"
+                android:text="Odustani"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

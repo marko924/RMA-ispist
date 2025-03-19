@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/korisnikProfilIzmeni"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181818"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/profileImageView4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circle_background"
+        android:contentDescription="Profilna slika"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_account_circle_24" />
+
+    <EditText
+        android:id="@+id/imeProfilIzmena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Ime"
+        android:inputType="text"
+        android:textColor="#FBFAFA"
+        android:textColorHint="#474748" />
+
+    <EditText
+        android:id="@+id/prezimeProfilIzmena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Prezime"
+        android:inputType="text"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#474748" />
+
+    <EditText
+        android:id="@+id/brTelProfilIzmena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Broj telefona"
+        android:inputType="phone"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#474748" />
+
+    <EditText
+        android:id="@+id/emailProfilIzmena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text|textEmailAddress"
+        android:textColor="#FBFAFA"
+        android:textColorHint="#474748" />
+
+    <EditText
+        android:id="@+id/lozinkaProfilIzmeni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Lozinka"
+        android:inputType="text|textPassword"
+        android:textColor="#FBFAFA"
+        android:textColorHint="#474748" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="10dp"
+        android:buttonTint="@color/button"
+        android:text="Prikazi lozinku"
+        android:textColor="#474748" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/izmeniButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_button_orange"
+            android:text="Izmeni"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/buttonOdustani"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_button_orange"
+            android:text="Odustani"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>
